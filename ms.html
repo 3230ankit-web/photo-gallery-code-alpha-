@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="gallery">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScnrN1I82pJzWYJPv9xn3mQ3WHp1HLp4529A&s" onclick="openLightbox(0)">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHkz-CtfvMGgRgdHNQsxEMfsV37rycmXyYn4jbyBlVnEZZ-edxrgDlTl1Rbfo6teEkc2zsRuzlDUSc71RWUp5JtoegBcvnZPuUMwRmkDw&s=10"onclick="openLightbox(0)">
+<img src="https://www.mumbaiindians.com/static-assets/waf-images/8b/21/ba/16-9/1920-1080/XdEC8ReTHF.jpg"onclick="openLightbox(0)">
+
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img">
+
+  <button class="prev" onclick="changeSlide(-1)">❮</button>
+  <button class="next" onclick="changeSlide(1)">❯</button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
